@@ -20,36 +20,24 @@ defineProps({
       <div class="h-full w-max flex flex-col gap-[20px] justify-center">
         <div
           v-motion
-          :enter="{
-            scale: 1,
-          }"
-          :hovered="{
-            scale: 1.1,
-          }"
+          :enter="{ scale: 1 }"
+          :hovered="{ scale: 1.1 }"
           class="social"
         >
           <font-awesome-icon :icon="['fab', 'facebook']" />
         </div>
         <div
           v-motion
-          :enter="{
-            scale: 1,
-          }"
-          :hovered="{
-            scale: 1.1,
-          }"
+          :enter="{ scale: 1 }"
+          :hovered="{ scale: 1.1 }"
           class="social"
         >
           <font-awesome-icon :icon="['fab', 'twitter']" />
         </div>
         <div
           v-motion
-          :enter="{
-            scale: 1,
-          }"
-          :hovered="{
-            scale: 1.1,
-          }"
+          :enter="{ scale: 1 }"
+          :hovered="{ scale: 1.1 }"
           class="social"
         >
           <font-awesome-icon :icon="['fab', 'instagram']" />

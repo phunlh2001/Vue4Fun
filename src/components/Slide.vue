@@ -1,7 +1,11 @@
 <script setup>
+import { ref } from 'vue'
+
 defineProps({
   subTitle: String,
 })
+
+const socials = ref(['facebook', 'twitter', 'instagram'])
 </script>
 
 <template>
@@ -23,24 +27,9 @@ defineProps({
           :enter="{ scale: 1 }"
           :hovered="{ scale: 1.1 }"
           class="social"
+          v-for="social in socials"
         >
-          <font-awesome-icon :icon="['fab', 'facebook']" />
-        </div>
-        <div
-          v-motion
-          :enter="{ scale: 1 }"
-          :hovered="{ scale: 1.1 }"
-          class="social"
-        >
-          <font-awesome-icon :icon="['fab', 'twitter']" />
-        </div>
-        <div
-          v-motion
-          :enter="{ scale: 1 }"
-          :hovered="{ scale: 1.1 }"
-          class="social"
-        >
-          <font-awesome-icon :icon="['fab', 'instagram']" />
+          <font-awesome-icon :icon="['fab', social]" />
         </div>
       </div>
       <!-- icon end -->
